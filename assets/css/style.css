@@ -1,0 +1,57 @@
+
+body
+{
+   background:  #E3967F;
+
+}
+
+p,h1,h2,h3,h4,label
+{
+    color: #fff;
+}
+
+#button-add
+{
+    color: white;
+    border-color: white;
+}
+
+h1{
+    padding: 2rem 0;
+    background: #D3816E;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+.custom-control
+{
+    padding: 0.5rem 0;
+}
+
+.custom-control strong
+{
+    color:#D3816E;
+    size: 20px;
+}
+footer
+{
+    background: #D3816E;
+    padding: 1rem 0;
+}
+
+footer a 
+{
+    text-decoration: none;
+    color:white;
+}
+
+footer i 
+{
+    size: 15px;
+}
+
+footer a:hover
+{
+    text-decoration: none;
+    color:white;
+}
