@@ -18,5 +18,19 @@ $(document).ready(function () {
         console.log($(this));
     })
 
+    $(window).keydown(function (event) {
+        if (event.keyCode == 13) {
+            $("#content").append('<div class="custom-control custom-checkbox">' +
+                '<input type="checkbox" class="custom-control-input" id="customCheck' + index + '" name="check">' +
+                '<label class="custom-control-label" for="customCheck' + index + '">'
+                + $("input[name=title]").val() +
+                '</label> </div >'
+            )
+            $("input[name=title]").val("");
+            index = index + 1;
+            return false;
+        }
+    });
+
     
 });
