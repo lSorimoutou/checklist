@@ -73,6 +73,11 @@ h1{
      white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:#8c9eff;
+}
+
 .delete-item:hover{
 color:#cd4400;
 
