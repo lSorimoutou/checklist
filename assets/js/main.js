@@ -18,7 +18,7 @@ $(document).ready(function () {
         console.log($(this));
     })
 
-    $(window).keydown(function (event) {
+    $('input[name="title"]').keydown(function (event) {
         if (event.keyCode == 13) {
             $("#content").append('<div class="custom-control custom-checkbox">' +
                 '<input type="checkbox" class="custom-control-input" id="customCheck' + index + '" name="check">' +
