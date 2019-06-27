@@ -17,29 +17,33 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1 class="text-center">To do List</h1>
+        <h1 class="text-center"><i class="fas fa-check-circle"></i>To do List</h1>
         <div class="container">
-            <form>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Title..." aria-label="Title..."
-                        aria-describedby="basic-addon2" name="title">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-add">Add</button>
+            <div class="row">
+                <div class="col-md-6 offset-3 list">
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Title..." aria-label="Title..."
+                                aria-describedby="basic-addon2" name="title">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-add">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-sm-6" id="content">
                     </div>
                 </div>
-            </form>
-            <div class="col-sm-6" id="content">
-            </div>
-            
+            </div>  
         </div>
 
         <footer>
-            <p class="text-center"><a href="https://github.com/lSorimoutou">L.S</a></p>
+            <p class="text-center"><a href="https://github.com/lSorimoutou"><i class="fab fa-github"></i>@lSorimoutou</a></p>
         </footer>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

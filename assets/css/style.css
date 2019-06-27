@@ -1,48 +1,101 @@
 
+*{
+/*transition*/
+-webkit-transition:.25s ease-in-out;
+   -moz-transition:.25s ease-in-out;
+     -o-transition:.25s ease-in-out;
+        transition:.25s ease-in-out;
+}
+
 body
 {
-   background:  #E3967F;
+   background:#f8f8f8;
 
 }
 
-p,h1,h2,h3,h4,label
-{
-    color: #fff;
-}
 
-#button-add
-{
-    color: white;
-    border-color: white;
-}
 
 h1{
     padding: 2rem 0;
-    background: #D3816E;
     letter-spacing: 5px;
     text-transform: capitalize;
 }
 
+.list
+{
+    background: #fff;
+    margin:0 auto 50px auto;
+    padding:50px;
+
+    border-radius: 2px;
+
+    /*box-shadow*/
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.todo-elt
+{
+    display:block;
+    position:relative;
+    padding-left:35px;
+
+    /*box-shadow*/
+    -webkit-box-shadow:0 2px 0 -1px #ebebeb;
+    -moz-box-shadow:0 2px 0 -1px #ebebeb;
+    box-shadow:0 2px 0 -1px #ebebeb;
+}
+
+.delete-item
+{
+    display:block;
+    position:absolute;
+    line-height:36px;
+    right:0;
+    top:0;
+    left: 250px;
+    text-align:center;
+    color:#d8d8d8;
+    opacity: 1;
+    
+}
+
+.custom-control-label
+{
+     white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.delete-item:hover{
+color:#cd4400;
+
+}
+
+.fa-check-circle
+{
+    color: #8c9eff;
+    padding-right: 10px;
+}
 .custom-control
 {
     padding: 0.5rem 0;
+    font-weight:400;
+    height:37px;
+    position:relative;
 }
 
 .custom-control strong
 {
-    color:#D3816E;
+    color:#ff8a80;
     size: 20px;
 }
-footer
-{
-    background: #D3816E;
-    padding: 1rem 0;
-}
+
 
 footer a 
 {
     text-decoration: none;
-    color:white;
+    color:#8c9eff;
 }
 
 footer i 
@@ -53,5 +106,5 @@ footer i
 footer a:hover
 {
     text-decoration: none;
-    color:white;
+    color:#536dfe;
 }
