@@ -14,6 +14,18 @@ $(document).ready(function () {
         index = index + 1;
     });
 
+    $("body").on('click', 'input[name="check"]', function () {
+        if ($(this).is(':checked'))
+        {
+            $(this).attr('checked', true);
+        }
+        else
+        {
+            $(this).attr('checked', false);
+        }
+        
+    });
+
     $("body").on('click', '.delete-item', function (){
         $(this).parent().fadeOut("slow");
         $(this).parent().parent().remove();

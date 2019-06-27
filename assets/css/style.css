@@ -36,6 +36,12 @@ h1{
 
 }
 
+:checked + .custom-control-label
+{
+    color:#717171;
+    text-decoration: line-through;
+    text-decoration-color: #8c9eff;
+}
 .todo-elt
 {
     display:block;
